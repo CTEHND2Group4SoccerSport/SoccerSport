@@ -1,0 +1,501 @@
+*{
+	box-sizing:border-box;
+}
+
+body{
+	margin:0px;
+	background:#fff;
+	height:100%;
+	position:relative;
+}
+header{
+	width:100%;
+	height:180px;
+	padding:10px;
+	background:linear-gradient(black,grey);
+}
+.leagues-header{
+	background:linear-gradient(black, rgba(155,50,204,0.4));
+}
+
+input[type=text]{
+	width:17%;
+	height:50px;
+	margin-left:68%;
+	font-size:20px;
+	padding:10px;
+	font-family:chiller;
+	text-align:center;
+	border:none;
+	border-top-left-radius:10px;
+	border-bottom-left-radius:10px;
+}
+input[type=text]:focus{
+	background:transparent;
+	color:#ccc;
+	background:rgba(255,220,150,0.4);
+	border-right:5px solid rgba(44, 44, 44, 0.5);
+}
+header button{
+	width:15%;
+	height:50px;
+	background-color:transparent;
+	border:none;
+	float:right;
+	background:#ccc;
+	color:black;
+	border-top-right-radius:10px;
+	border-bottom-right-radius:10px;
+}
+header button a{
+	display:block;
+	width:100%;
+	height:100%;
+	background:trasparent;
+	text-decoration:none;
+	color:black;
+	font-family:Agency FB;
+	letter-spacing:7px;
+	padding:10px;
+	transition:0.5s;
+}
+header button a:hover{
+	background:gray;
+	color:#ccc;
+}
+header h1{
+	margin-top:25px;
+	width:100%;
+	text-align:center;
+	font-family:AaSansOutline;
+	color:aliceblue;
+	letter-spacing:19px;
+}
+#logo {
+	width:300px;
+	height:150px;
+	float:left;
+	margin-top:20px;
+	position:absolute;
+}
+#logo img{
+	width:100%;
+	height:100%;
+}
+nav {
+	width:100%;
+	height:50px;
+	padding:0px;
+	background:rgba(0,0,0,0.8);
+}
+nav ul{
+	width:100%;
+	height:100%;
+	margin:0px;
+	padding-left:10;
+}
+nav a{
+	display:block;
+	width:100%;
+	height:100%;
+	color:#fff;
+	font-size:1.5em;
+	text-decoration:none;
+	font-family:Agency FB;
+	letter-spacing:4px;
+	padding:5px;
+	transition:0.5s;
+}
+nav a:hover{
+	color:skyblue;
+}
+ul li{
+	display:inline-block;
+	width:24%;
+	height:100%;
+	text-align:center;
+}
+.clubLogos{
+	width:100%;
+	height:80px;
+	position:absolute;
+	padding-left:20px;
+	background:linear-gradient(black, rgba(155,50,204,0.4));
+}
+#cl-clubLogos{
+	background:linear-gradient(#000, skyblue);
+}
+#el-clubLogos{
+	background:linear-gradient(#000, gold);
+}
+#il-clubLogos{
+	background:linear-gradient(#000, green);
+}
+.clubLg{
+	height:40%;
+	width:50px;
+	display:inline-block;
+	margin-top:20px;
+	margin-right:6px;
+}
+.clubLogos img {
+	height:85%;
+	width:85%;
+	margin:3px 3px;
+	box-sizing:border-box;
+	cursor:pointer;
+	
+}
+.intl-section{
+	margin:0px;
+	width:70%;
+	margin:auto;
+	margin-top:80px;
+}
+.leagues /* Left section on the different leagues page */{
+	margin:0px;
+	width:70%;
+	float:left;
+	margin:auto;
+	margin-top:80px;
+}
+#scorersChat{
+	float:right;
+	width:100%;
+	height:360px;
+	margin-top:30px;
+	background:black;
+}
+#scorersChat th{
+	background:rgba(0,200,200,0.6);
+	width:100%;
+}
+#scorersChat td{
+	padding:3px;
+	text-align:center;
+	color:#fff;
+}
+.top-content{
+	float:left;
+}
+
+#top-content, #el-top-content, #cl-top-content, #il-top-content, #leagues-top-content{
+	width:100%;
+	height:100px;
+}
+#cl-top-content{
+	background:linear-gradient(skyblue, #ccc);
+}
+#el-top-content{
+	background:linear-gradient(gold, #ccc);
+}
+#il-top-content{
+	background:linear-gradient(green, #ccc);
+}
+#leagues-top-content{
+	background:linear-gradient(rgba(155,50,204,0.4), #ccc);
+}
+#top-content img, #cl-top-content img, #el-top-content img, #il-top-content img, #leagues-top-content img{
+	width:40%;
+	margin-left:30%;
+	height:100%;
+}
+.league-section-content{
+	width:100%;
+	height:auto;
+	padding:5px;
+	background:#ccc;
+	float:right;
+}
+.league-section-content img{
+	height:200px;
+	width:200px;
+	float:left;
+	clear:both;
+}
+.league-section-content h2
+{
+	width:100%;
+	text-align:center;
+}
+.league-section-content p {
+	width:70%;
+	padding:15px;
+	float:left;
+	margin:0px;
+}
+.content {
+	width:100%;
+	padding: 0 18px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	background-color: #f1f1f1;
+}
+.content p{
+	width:100%;
+	font-family: Andalus;
+	line-height:20px;
+	text-align:justify;
+}
+.content p img{
+	width:95%;
+	height:250px;
+	margin:auto 25px;
+}
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.collapsible:hover {
+  /*background-color: #555;*/
+  border-bottom:3px solid purple;
+}
+.site-label{
+	width:100%;
+	color:#ccc;
+	text-align:center;
+	background:rgba(0,0,0,0.5);
+}
+.uefaGrps{
+	height:1250px;
+	overflow:scroll;
+	background:#ddd;
+}
+.uefaGrps h1{
+	text-align:center;
+}
+.uefaGrps table{
+	height:200px;
+	width:90%;
+}
+.uefa-cl-table tr:nth-child(even){
+	background:skyblue;
+	color:#000;
+}
+.uefa-cl-table tr:nth-child(odd){
+	background:#ccc;
+	color:#000;
+}
+.uefa-el-table tr:nth-child(even){
+	background:gold;
+	color:#000;
+}
+.uefa-el-table tr:nth-child(odd){
+	background:#ccc;
+	color:#000;
+}
+.otherLeaguesAside{
+	width:100%;
+	height:auto;
+}
+aside{
+	width:30%;
+	height:auto;
+	background:#ccc;
+	float:right;
+	margin-top:60px;
+}
+aside h3{
+	color:black;
+	background:#ddd;
+	text-align:center;
+	height:30px;
+	padding:5px;
+}
+aside table:hover{
+	width:100%;
+}
+aside table{
+	height:750px;
+	width:98%;
+	margin:auto;
+	transition:0.5s;
+}
+td{
+	font-size:12px;
+	padding:5px;
+	text-align:center;
+}
+tr:nth-child(even) {
+	
+	background:rgba(160,32,200,0.3);
+	color:#000;
+
+}
+tr:nth-child(odd) {
+	background:#000;
+	color:#fff;
+}
+.pgNum{
+	display:inline-block;
+	padding:5px;
+	width:25px;
+	height:25px;
+	text-decoration:none;
+	background:rgba(160,32,200,0.7);
+	color:#fff;
+}
+.page{
+	width:100%;
+	height:auto;
+	background:#ccc;
+	padding:10px;
+}
+.page p {
+	display:inline-block;
+}
+footer{
+	height:auto;
+	background:linear-gradient(grey,black);
+	color:#ddd;
+	padding-left:25px;
+	margin-top:1020;
+	width:100%;
+	display:inline-block;
+}
+footer span{
+	display:inline-block;
+	margin-top:-10px;
+	float:right;
+	background:#ccc;
+	color:black;
+	padding:5px;
+	text-align:left;
+}
+#bodyCont{
+	position:relative;
+}
+
+
+@media ( min-width: 320px) and (max-width: 500px){
+	header{
+		padding:0px;
+		margin:0px;
+		height:235px;
+	}
+	
+	header h1{
+		font-size:15px;
+	}
+	#logo{
+		position:absolute;
+		width:100%;
+		height:150px;
+	}
+	header button{
+		margin-top:150px;
+		width:150px;
+		position:absolute;
+		left:192px;
+	}
+	header input[type=text]{
+		width:150px;
+		position:absolute;
+		margin-left:10%;
+		margin-top:150px;
+	}
+	nav{
+		padding:0px;
+		height:auto;
+	}
+	ul{
+		padding:0px;
+	}
+	nav li{
+		display:inline-block;
+		width:100%;
+		background:black;
+		margin-top:5px;
+	}
+	nav li a {
+		color:#fff;
+	}
+	aside{
+		visibility:hidden;
+		float:none;
+		position:absolute;
+	}
+	#top-content img, #cl-top-content img, #el-top-content img, #il-top-content img, #leagues-top-content img{
+	width:70%;
+	margin-left:15%;
+	height:100%;
+}
+	.clubLogos{
+		visibility:hidden;
+	}
+	#il-top-content{
+		background:linear-gradient(black, #ccc);
+	}
+	.intl-section{
+		margin-top:0px;
+		width:100%;
+	}
+	.intl-section p, .leagues p{
+		float:none;
+		padding-top:0px;
+		width:100%;
+	}
+	.leagues{
+		float:none;
+		width:100%;
+		margin-top:0px;
+	}
+	.leagues img, .intl-section img{
+		width:40%;
+		float:none;
+		height:40%;
+		margin-left:30%;
+	}
+	.league-section-content  {}
+	footer{
+		height:auto;
+	}
+	footer span{
+		visibility:hidden;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

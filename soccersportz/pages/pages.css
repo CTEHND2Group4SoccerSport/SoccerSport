@@ -1,0 +1,428 @@
+body{
+	margin:0px;
+	background:linear-gradient(white,black);
+	height:100%;
+	position:relative;
+}
+*{
+	box-sizing:border-box;
+}
+@keyframes menu_hover{
+	from{color:#fff;}
+	to{color:skyblue;}
+	
+}
+
+@keyframes btn_hover{
+	0%{background:#ccc;}
+	50%{background:gray;}
+	100%{background:gray;}
+}
+header{
+	width:100%;
+	height:180px;
+	padding:10px;
+	background:linear-gradient(black,skyblue);
+}
+.gradient-BSB{
+	width:100%;
+	height:180px;
+	padding:10px;
+	background:linear-gradient(black,skyblue);
+}
+.gradient-BR{
+	background:linear-gradient(black,red);
+}
+.gradient-BBr{
+	background:linear-gradient(black,gold);
+}
+.gradient-BGr{
+	background:linear-gradient(black,#ccc);
+}
+.gradient-BG{
+	background:linear-gradient(black,green);
+}
+#menu-content-logo{
+	width:100%;
+	height:200px;
+}
+input[type=text]{
+	width:17%;
+	height:50px;
+	margin-left:68%;
+	font-size:20px;
+	padding:10px;
+	font-family:chiller;
+	text-align:center;
+	border:none;
+	border-top-left-radius:10px;
+	border-bottom-left-radius:10px;
+}
+input[type=text]:focus{
+	background:transparent;
+	color:#ccc;
+	background:rgba(255,220,150,0.4);
+	border-right:5px solid rgba(44, 44, 44, 0.5);
+}
+header button{
+	width:15%;
+	height:50px;
+	background-color:transparent;
+	border:none;
+	float:right;
+	background:#ccc;
+	color:black;
+	border-top-right-radius:10px;
+	border-bottom-right-radius:10px;
+}
+header button a{
+	display:block;
+	width:100%;
+	height:100%;
+	background:trasparent;
+	text-decoration:none;
+	color:black;
+	font-family:Agency FB;
+	letter-spacing:7px;
+	padding:10px;
+}
+header button a:hover{
+	animation:btn_hover 2s linear ;
+	background:gray;
+	color:#ccc;
+}
+header h1{
+	margin-top:25px;
+	width:100%;
+	text-align:center;
+	font-family:AaSansOutline;
+	color:aliceblue;
+	letter-spacing:19px;
+}
+#logo {
+	width:300px;
+	height:150px;
+	float:left;
+	margin-top:20px;
+	position:absolute;
+}
+#logo img{
+	width:100%;
+	height:100%;
+}
+nav {
+	width:100%;
+	height:50px;
+	padding:0px;
+	background:transparent;
+}
+nav ul{
+	width:100%;
+	height:100%;
+	margin:0px;
+	padding-left:10;
+}
+nav a{
+	display:block;
+	width:100%;
+	height:100%;
+	color:#000;
+	font-size:1.5em;
+	text-decoration:none;
+	font-family:Agency FB;
+	letter-spacing:4px;
+	padding:5px;
+}
+nav a:hover{
+	animation: menu_hover 1s linear 1s;
+	color:skyblue; 
+	border-top-right-radius:5px;
+}
+ul li{
+	display:inline-block;
+	width:24%;
+	height:100%;
+	text-align:center;
+}
+section{
+	width:80%;
+	overflow:scroll;
+	height:700px;
+}
+section{ /*this is the styling for the left section containing posts of the international, europa and champions league pages */
+	width:60%;
+	height:700px;
+	overflow:scroll;
+	padding:10px;
+	background:linear-gradient(black,grey);/*rgba(0,0,0,0.9);*/
+}
+.leagues /* Left section on the different leagues page */{
+	margin:0px;
+	width:65%;
+	float:right;
+	margin:auto;
+}
+.pgContTxt {
+	width:70%;
+	float:left;
+	padding:20px;
+	background:red;
+}
+.left-container{
+	width:40%;
+}
+.leagues-content{
+	float:left;
+}
+.pageCont {
+	width:100%;
+	height:200px;
+	padding:15px 10px;
+	margin-bottom:10px;
+	background:white;
+}
+.lpgCont{ /* The content of the center container on the different league pages */
+	width:95%;
+	height:200px;
+	padding:10px;
+	margin:20px auto;
+	background:white;
+	border-radius:10px;
+	margin-bottom:-10px;
+}
+
+#center-container{
+	width:70%;
+	height:auto;
+	float:right;
+}
+#scorersChat{
+	float:left;
+	width:35%;
+	margin-top:200px;
+	position:absolute;
+	top:50px;
+	background:black;
+}
+#scorersChat th{
+	background:rgba(0,200,200,0.6);
+	width:100%;
+	
+}
+
+aside td{
+	height:15px;
+}
+.pgcontImg{
+	width:30%;
+	height:100%;
+	float:left;
+	border:1px solid black;
+}
+.pageCont img, .lpgCont img{
+	width:100%;
+	height:100%;
+}
+
+
+/*************The table on the different league page**************************/
+
+aside{
+	width:25%;
+	height:700px;
+	background:rgba(0,0,0,0.8);
+	float:right;
+}
+
+aside h3{
+	color:black;
+	background:#ddd;
+	text-align:center;
+	height:30px;
+	padding:5px;
+}
+table{
+	height:auto;
+	width:100%;
+}
+
+td{
+	font-size:12px;
+	padding:5px;
+}
+tr:nth-child(even) {
+	
+	background:rgba(160,32,200,0.3);
+	color:#fff;
+
+}
+tr:nth-child(odd) {
+	background:#000;
+	color:#fff;
+}
+#champLeague-page-table tr:nth-child(even){
+	background:skyblue;
+	color:#000;
+}
+#champLeague-page-table tr:nth-child(odd){
+	background:#000;
+	color:#fff;
+}
+#europa-page-table tr:nth-child(even){
+	background:gold;
+	color:#000;
+}
+#europa-page-table tr:nth-child(odd){
+	background:#000;
+	color:#fff;
+}
+/* Table close */
+footer{
+	width:100%;
+	padding:10px;
+	text-align:center;
+	background:linear-gradient(grey,black);
+	color:#ddd;
+	position:absolute;
+	bottom:0;
+}
+footer span{
+	display:inline-block;
+	margin-top:-10px;
+	float:right;
+	background:#ccc;
+	color:black;
+	padding:5px;
+	text-align:left;
+}
+#top-content{
+	width:100%;
+	height:100px;
+	background:linear-gradient(purple, #ddd);
+}
+#top-content img{
+	width:40%;
+	margin-left:30%;
+	height:100%;
+}
+
+.top-content{
+	float:left;
+}
+
+
+.league-section-content{
+	width:100%;
+	height:auto;
+	padding:15px;
+	background:#ccc;
+	float:right;
+}
+.league-section-content img{
+	height:200px;
+	width:200px;
+	float:left;
+	clear:both;
+}
+.league-section-content h2
+{
+	width:100%;
+	text-align:center;
+}
+.league-section-content p {
+	width:70%;
+	padding:15px;
+	float:left;
+	margin:0px;
+}
+.hide {
+	display:inline-block;
+	width:auto;
+	padding:5px;
+	height:auto;
+}
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.site-label{
+	width:100%;
+	color:#ccc;
+	text-align:center;
+	background:rgba(0,0,0,0.5);
+}
+.active, .collapsible:hover {
+  /*background-color: #555;*/
+  border-bottom:3px solid purple;
+}
+
+.content {
+	width:100%;
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+.content p{
+	width:100%;
+	font-family: Andalus;
+	line-height:20px;
+}
+.content p img{
+	width:100%;
+	height:250px;
+	margin:auto;
+}
+img{
+	width:100px;
+	height:100px;
+}
+
+
+
+
+/************************************************************/
+
+@media ( min-width: 320px) and (max-width: 500px){
+	/*
+	
+	aside{
+		position:absolute;
+		margin-top:1200px;
+		width:100%;
+		background:#fff;
+		overflow:visible;
+	}
+	*/
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
